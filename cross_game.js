@@ -17,16 +17,18 @@
     for (var i = 0; i < 10; i++) {
 
         if (i == 0) {
-            arrForElements[i]= document.createElement("div");
+            arrForElements[i] = document.createElement("div");
             arrForElements[i].style.clear = "both";
-            arrForElements[i].innerText = "Noughts and crosses"
+            arrForElements[i].id = "titleBlock";
+            arrForElements[i].innerText = "Noughts and crosses";
             arrForElements[i].style.minHeight = "20px";
-            document.body.appendChild( arrForElements[i]);
-            continue;}
- 
+            document.body.appendChild(arrForElements[i]);
+            continue;
+        }
+
         arrForElements[i] = document.createElement("div");
         arrForElements[i].className = "cellClass";
-        arrForElements[i].style.outline  = "1px solid yellow";
+        arrForElements[i].style.outline = "1px solid yellow";
 
         arrForElements[i].style.float = "left";
         arrForElements[i].style.backgroundColor = "lightsteelblue";
@@ -37,13 +39,12 @@
 
         if (i == 4 || i == 7) {
             arrForElements[i].style.clear = "both";
-            }
+        }
 
 
         document.body.appendChild(arrForElements[i]);
 
     }
-
 
 
     var cellsArray = document.getElementsByClassName("cellClass");
@@ -55,13 +56,12 @@
     var cellsArray = Array.prototype.slice.call(cellsArray); // Или сокращённая форма: [].slice.call(cellsArray);
 //можно обойтись без двумерного массива тут
     for (var i = 0; i < cellsArray.length; i++) {
-        cellsArray[i].innerText = "  cell # "  + i;
+        cellsArray[i].innerText = "  cell # " + i;
 
         cellsArray[i].onclick = function (e) {
             handleCellClick(e.target, cellsArray);
         };
     }
-
 
 
     var stageOfCrossOrCircle;
@@ -78,7 +78,7 @@
             }
             elemInProcess.style.backgroundPosition = "center center";
             elemInProcess.style.backgroundRepeat = "no-repeat";
-            elemInProcess.innerText  = "dataset.inside = X"  ;
+            elemInProcess.innerText = "dataset.inside = X";
             elemInProcess.dataset.inside = "X";
 //                elemInProcess.setAttribute("data-inside", "X");
             stageOfCrossOrCircle = "red";
@@ -100,7 +100,7 @@
             }
             elemInProcess.style.backgroundPosition = "center center";
             elemInProcess.style.backgroundRepeat = "no-repeat";
-            elemInProcess.innerText  = "dataset.inside = O"  ;
+            elemInProcess.innerText = "dataset.inside = O";
             elemInProcess.dataset.inside = "O";
             stageOfCrossOrCircle = "gold";
 //                elemInProcess.setAttribute("data-inside", "O");
@@ -115,6 +115,8 @@
                 cellsArray[0].style.backgroundColor = "dimgrey";
                 cellsArray[1].style.backgroundColor = "dimgrey";
                 cellsArray[2].style.backgroundColor = "dimgrey";
+                stopGame();
+
             }
         }
 
@@ -124,6 +126,7 @@
                 cellsArray[3].style.backgroundColor = "dimgrey";
                 cellsArray[4].style.backgroundColor = "dimgrey";
                 cellsArray[5].style.backgroundColor = "dimgrey";
+                stopGame();
             }
         }
 
@@ -134,6 +137,7 @@
                 cellsArray[6].style.backgroundColor = "dimgrey";
                 cellsArray[7].style.backgroundColor = "dimgrey";
                 cellsArray[8].style.backgroundColor = "dimgrey";
+                stopGame();
             }
 
         }
@@ -146,6 +150,7 @@
                 cellsArray[0].style.backgroundColor = "dimgrey";
                 cellsArray[4].style.backgroundColor = "dimgrey";
                 cellsArray[8].style.backgroundColor = "dimgrey";
+                stopGame();
             }
 
         }
@@ -157,6 +162,7 @@
                 cellsArray[2].style.backgroundColor = "dimgrey";
                 cellsArray[4].style.backgroundColor = "dimgrey";
                 cellsArray[6].style.backgroundColor = "dimgrey";
+                stopGame();
             }
 
         }
@@ -168,6 +174,7 @@
                 cellsArray[0].style.backgroundColor = "dimgrey";
                 cellsArray[3].style.backgroundColor = "dimgrey";
                 cellsArray[6].style.backgroundColor = "dimgrey";
+                stopGame();
             }
 
         }
@@ -179,6 +186,7 @@
                 cellsArray[1].style.backgroundColor = "dimgrey";
                 cellsArray[4].style.backgroundColor = "dimgrey";
                 cellsArray[7].style.backgroundColor = "dimgrey";
+                stopGame();
             }
 
         }
@@ -190,15 +198,23 @@
                 cellsArray[2].style.backgroundColor = "dimgrey";
                 cellsArray[5].style.backgroundColor = "dimgrey";
                 cellsArray[8].style.backgroundColor = "dimgrey";
+                stopGame();
             }
 
         }
 
 
+        function stopGame() {
+
+            for (var i = 0; i < cellsArray.length; i++) {
+                document.getElementById("titleBlock").innerText = "Oh! You've win! Game is over."
+                     cellsArray[i].onclick = false;
+
+            }
+        }
+
+
     }
-
-
-
 
 
 })();
