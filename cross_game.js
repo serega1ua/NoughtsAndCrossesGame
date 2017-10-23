@@ -1,6 +1,12 @@
 /**
  * Created by Sony on 23.10.2017.
  */
+
+// TODO упрощаем создание html-разметки
+// TODO алгоритмоценки совпадения "по диагонали" разработать
+// TODO значения записывать в двумерный массив
+// TODO перестроим модульность кода, разбив на функции отдельные
+
 //создаем анонимную самозывыающуюся функцию (function expression), вызов на "месте",
 // в глобальном простанстве имен она не затрагивает пространство переменных, т.к своего имени не имеет, свои переменные локальны у неё
 (function () {
@@ -8,7 +14,7 @@
 //создаём саму html-разметку, всего 12 элементов: 1 отступ от содержимого (i=0), 2 блока очиcтки от float (i=7 или i=9), 9 блоков клеток
 // создаём их в цикле, так как они индентичны
     var arrForElements = [];
-    for (var i = 0; i < 12; i++) {
+    for (var i = 0; i < 10; i++) {
 
         if (i == 0) {
             arrForElements[i]= document.createElement("div");
@@ -17,13 +23,7 @@
             arrForElements[i].style.minHeight = "20px";
             document.body.appendChild( arrForElements[i]);
             continue;}
-
-        if (i == 4 || i == 8) { arrForElements[i]= document.createElement("div");
-            arrForElements[i].style.clear = "both";
-
-            document.body.appendChild( arrForElements[i]);
-            continue;}
-
+ 
         arrForElements[i] = document.createElement("div");
         arrForElements[i].className = "cellClass";
         arrForElements[i].style.outline  = "1px solid yellow";
@@ -33,6 +33,13 @@
         arrForElements[i].style.minHeight = "100px";
         arrForElements[i].style.minWidth = "100px";
         arrForElements[i].style.fontSize = "12px";
+
+
+        if (i == 4 || i == 7) {
+            arrForElements[i].style.clear = "both";
+            }
+
+
         document.body.appendChild(arrForElements[i]);
 
     }
@@ -187,7 +194,7 @@
 
         }
 
-      
+
     }
 
 
