@@ -7,22 +7,37 @@
 // TODO значения записывать в двумерный массив
 // TODO перестроим модульность кода, разбив на функции отдельные
 
+
+startGame();
 //создаем анонимную самозывыающуюся функцию (function expression), вызов на "месте",
 // в глобальном простанстве имен она не затрагивает пространство переменных, т.к своего имени не имеет, свои переменные локальны у неё
-(function () {
+function startGame() {
 
 //создаём саму html-разметку, всего 12 элементов: 1 отступ от содержимого (i=0), 2 блока очиcтки от float (i=7 или i=9), 9 блоков клеток
 // создаём их в цикле, так как они индентичны
+
+
+    var wrapperDiv = document.createElement("div");
+    wrapperDiv.className = "wrapper";
+
+
+
+    document.body.appendChild(wrapperDiv);
+    console.log("1");
+
     var arrForElements = [];
     for (var i = 0; i < 10; i++) {
-
+        console.log("2");
         if (i == 0) {
             arrForElements[i] = document.createElement("div");
             arrForElements[i].style.clear = "both";
+            arrForElements[i].style.maxWidth = "300px";
+            arrForElements[i].style.textAlign = "center";
+
             arrForElements[i].id = "titleBlock";
             arrForElements[i].innerText = "Noughts and crosses";
             arrForElements[i].style.minHeight = "20px";
-            document.body.appendChild(arrForElements[i]);
+            wrapperDiv.appendChild(arrForElements[i]);
             continue;
         }
 
@@ -37,12 +52,13 @@
         arrForElements[i].style.fontSize = "12px";
 
 
-        if (i == 4 || i == 7) {
+        if (i == 4 || i == 7 || i == 1) {
+
             arrForElements[i].style.clear = "both";
         }
 
 
-        document.body.appendChild(arrForElements[i]);
+        wrapperDiv.appendChild(arrForElements[i]);
 
     }
 
@@ -56,8 +72,7 @@
     var cellsArray = Array.prototype.slice.call(cellsArray); // Или сокращённая форма: [].slice.call(cellsArray);
 //можно обойтись без двумерного массива тут
     for (var i = 0; i < cellsArray.length; i++) {
-        cellsArray[i].innerText = "  cell # " + i;
-
+        // cellsArray[i].innerText = "  cell # " + i;
         cellsArray[i].onclick = function (e) {
             handleCellClick(e.target, cellsArray);
         };
@@ -78,7 +93,7 @@
             }
             elemInProcess.style.backgroundPosition = "center center";
             elemInProcess.style.backgroundRepeat = "no-repeat";
-            elemInProcess.innerText = "dataset.inside = X";
+            // elemInProcess.innerText = "dataset.inside = X";
             elemInProcess.dataset.inside = "X";
 //                elemInProcess.setAttribute("data-inside", "X");
             stageOfCrossOrCircle = "red";
@@ -100,7 +115,7 @@
             }
             elemInProcess.style.backgroundPosition = "center center";
             elemInProcess.style.backgroundRepeat = "no-repeat";
-            elemInProcess.innerText = "dataset.inside = O";
+            // elemInProcess.innerText = "dataset.inside = O";
             elemInProcess.dataset.inside = "O";
             stageOfCrossOrCircle = "gold";
 //                elemInProcess.setAttribute("data-inside", "O");
@@ -112,9 +127,9 @@
         if (cellsArray[0].dataset.inside && cellsArray[1].dataset.inside && cellsArray[2].dataset.inside) {
 
             if ((cellsArray[0].dataset.inside == cellsArray[1].dataset.inside) && (cellsArray[1].dataset.inside == cellsArray[2].dataset.inside)) {
-                cellsArray[0].style.backgroundColor = "dimgrey";
-                cellsArray[1].style.backgroundColor = "dimgrey";
-                cellsArray[2].style.backgroundColor = "dimgrey";
+                cellsArray[0].style.backgroundColor = "black";
+                cellsArray[1].style.backgroundColor = "black";
+                cellsArray[2].style.backgroundColor = "black";
                 stopGame();
 
             }
@@ -123,9 +138,9 @@
         if (cellsArray[3].dataset.inside && cellsArray[4].dataset.inside && cellsArray[5].dataset.inside) {
 
             if ((cellsArray[3].dataset.inside == cellsArray[4].dataset.inside) && (cellsArray[4].dataset.inside == cellsArray[5].dataset.inside)) {
-                cellsArray[3].style.backgroundColor = "dimgrey";
-                cellsArray[4].style.backgroundColor = "dimgrey";
-                cellsArray[5].style.backgroundColor = "dimgrey";
+                cellsArray[3].style.backgroundColor = "black";
+                cellsArray[4].style.backgroundColor = "black";
+                cellsArray[5].style.backgroundColor = "black";
                 stopGame();
             }
         }
@@ -134,9 +149,9 @@
         if (cellsArray[6].dataset.inside && cellsArray[7].dataset.inside && cellsArray[8].dataset.inside) {
 
             if ((cellsArray[6].dataset.inside == cellsArray[7].dataset.inside) && (cellsArray[7].dataset.inside == cellsArray[8].dataset.inside)) {
-                cellsArray[6].style.backgroundColor = "dimgrey";
-                cellsArray[7].style.backgroundColor = "dimgrey";
-                cellsArray[8].style.backgroundColor = "dimgrey";
+                cellsArray[6].style.backgroundColor = "black";
+                cellsArray[7].style.backgroundColor = "black";
+                cellsArray[8].style.backgroundColor = "black";
                 stopGame();
             }
 
@@ -147,9 +162,9 @@
 
 
             if ((cellsArray[0].dataset.inside == cellsArray[4].dataset.inside) && (cellsArray[4].dataset.inside == cellsArray[8].dataset.inside)) {
-                cellsArray[0].style.backgroundColor = "dimgrey";
-                cellsArray[4].style.backgroundColor = "dimgrey";
-                cellsArray[8].style.backgroundColor = "dimgrey";
+                cellsArray[0].style.backgroundColor = "black";
+                cellsArray[4].style.backgroundColor = "black";
+                cellsArray[8].style.backgroundColor = "black";
                 stopGame();
             }
 
@@ -159,9 +174,9 @@
         if (cellsArray[2].dataset.inside && cellsArray[4].dataset.inside && cellsArray[6].dataset.inside) {
 
             if ((cellsArray[2].dataset.inside == cellsArray[4].dataset.inside) && (cellsArray[4].dataset.inside == cellsArray[6].dataset.inside)) {
-                cellsArray[2].style.backgroundColor = "dimgrey";
-                cellsArray[4].style.backgroundColor = "dimgrey";
-                cellsArray[6].style.backgroundColor = "dimgrey";
+                cellsArray[2].style.backgroundColor = "black";
+                cellsArray[4].style.backgroundColor = "black";
+                cellsArray[6].style.backgroundColor = "black";
                 stopGame();
             }
 
@@ -171,9 +186,9 @@
         if (cellsArray[0].dataset.inside && cellsArray[3].dataset.inside && cellsArray[6].dataset.inside) {
 
             if ((cellsArray[0].dataset.inside == cellsArray[3].dataset.inside) && (cellsArray[3].dataset.inside == cellsArray[6].dataset.inside)) {
-                cellsArray[0].style.backgroundColor = "dimgrey";
-                cellsArray[3].style.backgroundColor = "dimgrey";
-                cellsArray[6].style.backgroundColor = "dimgrey";
+                cellsArray[0].style.backgroundColor = "black";
+                cellsArray[3].style.backgroundColor = "black";
+                cellsArray[6].style.backgroundColor = "black";
                 stopGame();
             }
 
@@ -183,9 +198,9 @@
         if (cellsArray[1].dataset.inside && cellsArray[4].dataset.inside && cellsArray[7].dataset.inside) {
 
             if ((cellsArray[1].dataset.inside == cellsArray[4].dataset.inside) && (cellsArray[4].dataset.inside == cellsArray[7].dataset.inside)) {
-                cellsArray[1].style.backgroundColor = "dimgrey";
-                cellsArray[4].style.backgroundColor = "dimgrey";
-                cellsArray[7].style.backgroundColor = "dimgrey";
+                cellsArray[1].style.backgroundColor = "black";
+                cellsArray[4].style.backgroundColor = "black";
+                cellsArray[7].style.backgroundColor = "black";
                 stopGame();
             }
 
@@ -195,28 +210,64 @@
         if (cellsArray[2].dataset.inside && cellsArray[5].dataset.inside && cellsArray[8].dataset.inside) {
 
             if ((cellsArray[2].dataset.inside == cellsArray[5].dataset.inside) && (cellsArray[5].dataset.inside == cellsArray[8].dataset.inside)) {
-                cellsArray[2].style.backgroundColor = "dimgrey";
-                cellsArray[5].style.backgroundColor = "dimgrey";
-                cellsArray[8].style.backgroundColor = "dimgrey";
+                cellsArray[2].style.backgroundColor = "black";
+                cellsArray[5].style.backgroundColor = "black";
+                cellsArray[8].style.backgroundColor = "black";
                 stopGame();
             }
 
         }
 
+        if (cellsArray[0].dataset.inside && cellsArray[1].dataset.inside && cellsArray[2].dataset.inside && cellsArray[3].dataset.inside && cellsArray[4].dataset.inside && cellsArray[5].dataset.inside && cellsArray[6].dataset.inside && cellsArray[7].dataset.inside && cellsArray[8].dataset.inside) {
 
-        function stopGame() {
+            stopGame();  }
 
-            for (var i = 0; i < cellsArray.length; i++) {
-                document.getElementById("titleBlock").innerText = "Oh! You've win! Game is over."
-                     cellsArray[i].onclick = false;
 
             }
+
+
+    function stopGame() {
+
+        for (var i = 0; i < cellsArray.length; i++) {
+            cellsArray[i].onclick = false;
+
         }
+
+
+        document.getElementById("titleBlock").innerText = "Game is over."
+
+        var button = document.createElement("div");
+        button.style.clear = "both";
+        button.id = "startBlock";
+        button.style.backgroundColor = "lightsteelblue";
+        button.style.outline = "1px solid yellow";
+        button.style.marginTop = "320px";
+
+        button.innerText = " Click here to start  the Game again";
+        button.style.minHeight = "30px";
+        button.style.lineHeight = "30px";
+        button.style.maxWidth = "300px";
+        button.style.textAlign = "center";
+
+        wrapperDiv.appendChild(button);
+        button.addEventListener("click", startClear, false);
 
 
     }
 
 
-})();
+    function startClear() {
 
 
+        wrapperDiv.innerHTML = '';
+        wrapperDiv.parentNode.removeChild(wrapperDiv);
+        startGame();
+        // if (window.cellsArray) {
+        //     cellsArray = null;
+        // }
+        // if (window.stageOfCrossOrCircle) {
+        //     stageOfCrossOrCircle = undefined;
+        // }
+    }
+
+};

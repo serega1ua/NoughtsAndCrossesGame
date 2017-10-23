@@ -28,10 +28,11 @@
       <file leaf-file-name="cross_game.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cross_game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2086">
-              <caret line="203" column="9" lean-forward="true" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
+            <state relative-caret-position="168">
+              <caret line="241" column="54" lean-forward="false" selection-start-line="241" selection-start-column="54" selection-end-line="241" selection-end-column="54" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
+                <element signature="e#2761#2931#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -46,6 +47,14 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>orange</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>black</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -193,15 +202,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508773785247</updated>
-      <workItem from="1508773786617" duration="4625000" />
+      <workItem from="1508773786617" duration="11320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4625000" />
+    <option name="totallyTimeSpent" value="11320000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -251,10 +260,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cross_game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2086">
-          <caret line="203" column="9" lean-forward="true" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
+        <state relative-caret-position="168">
+          <caret line="241" column="54" lean-forward="false" selection-start-line="241" selection-start-column="54" selection-end-line="241" selection-end-column="54" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#2761#2931#0" expanded="false" />
           </folding>
         </state>
       </provider>
