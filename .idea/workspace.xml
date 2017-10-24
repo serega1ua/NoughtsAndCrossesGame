@@ -18,8 +18,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -28,14 +28,10 @@
       <file leaf-file-name="cross_game.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cross_game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="81" column="94" lean-forward="false" selection-start-line="81" selection-start-column="94" selection-end-line="81" selection-end-column="94" />
+            <state relative-caret-position="141">
+              <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
-                <element signature="e#4278#4350#0" expanded="false" />
-                <element signature="e#5127#5260#0" expanded="false" />
-                <element signature="e#5364#6283#0" expanded="false" />
-                <element signature="e#24726#25224#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -207,12 +203,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508773785247</updated>
-      <workItem from="1508773786617" duration="31808000" />
+      <workItem from="1508773786617" duration="39542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31808000" />
+    <option name="totallyTimeSpent" value="39542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -247,11 +243,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/cross_game.js</url>
-          <line>373</line>
+          <line>141</line>
           <properties />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -266,22 +262,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cross_game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="81" column="94" lean-forward="false" selection-start-line="81" selection-start-column="94" selection-end-line="81" selection-end-column="94" />
+        <state relative-caret-position="141">
+          <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
-            <element signature="e#4278#4350#0" expanded="false" />
-            <element signature="e#5127#5260#0" expanded="false" />
-            <element signature="e#5364#6283#0" expanded="false" />
-            <element signature="e#24726#25224#0" expanded="false" />
           </folding>
         </state>
       </provider>
