@@ -28,11 +28,10 @@
       <file leaf-file-name="cross_game.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cross_game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="241" column="54" lean-forward="false" selection-start-line="241" selection-start-column="54" selection-end-line="241" selection-end-column="54" />
+            <state relative-caret-position="-682">
+              <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
-                <element signature="e#2761#2931#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -202,12 +201,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508773785247</updated>
-      <workItem from="1508773786617" duration="11320000" />
+      <workItem from="1508773786617" duration="17723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11320000" />
+    <option name="totallyTimeSpent" value="17723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
@@ -238,7 +237,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cross_game.js</url>
+          <line>116</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -260,11 +268,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cross_game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="241" column="54" lean-forward="false" selection-start-line="241" selection-start-column="54" selection-end-line="241" selection-end-column="54" />
+        <state relative-caret-position="-682">
+          <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
-            <element signature="e#2761#2931#0" expanded="false" />
           </folding>
         </state>
       </provider>

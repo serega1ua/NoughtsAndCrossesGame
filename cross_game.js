@@ -45,6 +45,7 @@ function startGame() {
         arrForElements[i].className = "cellClass";
         arrForElements[i].style.outline = "1px solid yellow";
 
+        arrForElements[i].style.transition = "all .3s";
         arrForElements[i].style.float = "left";
         arrForElements[i].style.backgroundColor = "lightsteelblue";
         arrForElements[i].style.minHeight = "100px";
@@ -72,7 +73,7 @@ function startGame() {
     var cellsArray = Array.prototype.slice.call(cellsArray); // Или сокращённая форма: [].slice.call(cellsArray);
 //можно обойтись без двумерного массива тут
     for (var i = 0; i < cellsArray.length; i++) {
-        // cellsArray[i].innerText = "  cell # " + i;
+
         cellsArray[i].onclick = function (e) {
             handleCellClick(e.target, cellsArray);
         };
@@ -80,6 +81,37 @@ function startGame() {
 
 
     var stageOfCrossOrCircle;
+    var stageOfWinning = 0;
+
+    var stopGame = function () {
+
+        for (var i = 0; i < cellsArray.length; i++) {
+            cellsArray[i].onclick = false;
+        }
+
+
+        document.getElementById("titleBlock").innerText = "Game is over."
+
+        var button = document.createElement("div");
+        button.style.float = "left";
+        button.style.clear = "both";
+        button.id = "startBlock";
+        button.style.backgroundColor = "lightsteelblue";
+        button.style.outline = "1px solid yellow";
+        button.style.marginTop = "20px";
+
+        button.innerText = " Click here to start  the Game again";
+        button.style.minHeight = "30px";
+        button.style.lineHeight = "30px";
+        button.style.minWidth = "300px";
+        button.style.textAlign = "center";
+
+        wrapperDiv.appendChild(button);
+        button.addEventListener("click", startClear, false);
+
+
+    }
+
 
 
     function handleCellClick(elemInProcess, cellsArray) {
@@ -130,7 +162,8 @@ function startGame() {
                 cellsArray[0].style.backgroundColor = "black";
                 cellsArray[1].style.backgroundColor = "black";
                 cellsArray[2].style.backgroundColor = "black";
-                stopGame();
+                stageOfWinning =stageOfWinning+1;
+                if (stageOfWinning==1) {stopGame();}
 
             }
         }
@@ -141,7 +174,8 @@ function startGame() {
                 cellsArray[3].style.backgroundColor = "black";
                 cellsArray[4].style.backgroundColor = "black";
                 cellsArray[5].style.backgroundColor = "black";
-                stopGame();
+                stageOfWinning =stageOfWinning+1;
+                if (stageOfWinning==1) {stopGame();}
             }
         }
 
@@ -152,7 +186,8 @@ function startGame() {
                 cellsArray[6].style.backgroundColor = "black";
                 cellsArray[7].style.backgroundColor = "black";
                 cellsArray[8].style.backgroundColor = "black";
-                stopGame();
+                stageOfWinning =stageOfWinning+1;
+                if (stageOfWinning==1) {stopGame();}
             }
 
         }
@@ -165,7 +200,8 @@ function startGame() {
                 cellsArray[0].style.backgroundColor = "black";
                 cellsArray[4].style.backgroundColor = "black";
                 cellsArray[8].style.backgroundColor = "black";
-                stopGame();
+                stageOfWinning =stageOfWinning+1;
+                if (stageOfWinning==1) {stopGame();}
             }
 
         }
@@ -177,7 +213,8 @@ function startGame() {
                 cellsArray[2].style.backgroundColor = "black";
                 cellsArray[4].style.backgroundColor = "black";
                 cellsArray[6].style.backgroundColor = "black";
-                stopGame();
+                stageOfWinning =stageOfWinning+1;
+                if (stageOfWinning==1) {stopGame();}
             }
 
         }
@@ -189,7 +226,8 @@ function startGame() {
                 cellsArray[0].style.backgroundColor = "black";
                 cellsArray[3].style.backgroundColor = "black";
                 cellsArray[6].style.backgroundColor = "black";
-                stopGame();
+                stageOfWinning =stageOfWinning+1;
+                if (stageOfWinning==1) {stopGame();}
             }
 
         }
@@ -201,7 +239,8 @@ function startGame() {
                 cellsArray[1].style.backgroundColor = "black";
                 cellsArray[4].style.backgroundColor = "black";
                 cellsArray[7].style.backgroundColor = "black";
-                stopGame();
+                stageOfWinning =stageOfWinning+1;
+                if (stageOfWinning==1) {stopGame();}
             }
 
         }
@@ -213,54 +252,32 @@ function startGame() {
                 cellsArray[2].style.backgroundColor = "black";
                 cellsArray[5].style.backgroundColor = "black";
                 cellsArray[8].style.backgroundColor = "black";
-                stopGame();
+                stageOfWinning =stageOfWinning+1;
+                if (stageOfWinning==1) {stopGame();}
             }
 
         }
 
         if (cellsArray[0].dataset.inside && cellsArray[1].dataset.inside && cellsArray[2].dataset.inside && cellsArray[3].dataset.inside && cellsArray[4].dataset.inside && cellsArray[5].dataset.inside && cellsArray[6].dataset.inside && cellsArray[7].dataset.inside && cellsArray[8].dataset.inside) {
 
-            stopGame();  }
+            if (stageOfWinning==0) {stopGame();}  }
 
 
             }
 
 
-    function stopGame() {
-
-        for (var i = 0; i < cellsArray.length; i++) {
-            cellsArray[i].onclick = false;
-
-        }
-
-
-        document.getElementById("titleBlock").innerText = "Game is over."
-
-        var button = document.createElement("div");
-        button.style.clear = "both";
-        button.id = "startBlock";
-        button.style.backgroundColor = "lightsteelblue";
-        button.style.outline = "1px solid yellow";
-        button.style.marginTop = "320px";
-
-        button.innerText = " Click here to start  the Game again";
-        button.style.minHeight = "30px";
-        button.style.lineHeight = "30px";
-        button.style.maxWidth = "300px";
-        button.style.textAlign = "center";
-
-        wrapperDiv.appendChild(button);
-        button.addEventListener("click", startClear, false);
-
-
-    }
 
 
     function startClear() {
 
+        stageOfWinning = 0;
+        var elem = document.getElementById("startBlock");
+        elem.parentNode.removeChild(elem);
 
-        wrapperDiv.innerHTML = '';
+        // wrapperDiv.innerHTML = '';
+
         wrapperDiv.parentNode.removeChild(wrapperDiv);
+
         startGame();
         // if (window.cellsArray) {
         //     cellsArray = null;
