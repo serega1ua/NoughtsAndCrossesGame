@@ -18,10 +18,19 @@
       <file leaf-file-name="cross_game.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cross_game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="190" column="15" lean-forward="false" selection-start-line="190" selection-start-column="15" selection-end-line="190" selection-end-column="15" />
+            <state relative-caret-position="-697">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
-                <element signature="e#0#41#0" expanded="false" />
+                <element signature="e#519#1178#0" expanded="false" />
+                <element signature="e#1952#2244#0" expanded="false" />
+                <element signature="e#2415#32769#0" expanded="false" />
+                <element signature="e#32814#33323#0" expanded="false" />
+                <element signature="e#33424#46005#0" expanded="false" />
+                <element signature="e#46074#46881#0" expanded="false" />
+                <element signature="e#46990#60737#0" expanded="false" />
+                <element signature="e#60804#68665#0" expanded="false" />
+                <element signature="e#68754#69144#0" expanded="false" />
+                <marker date="1509125983075" expanded="true" signature="2425:2638" ph="..." />
               </folding>
             </state>
           </provider>
@@ -30,8 +39,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -54,9 +63,19 @@
       <find>startClear</find>
       <find>co</find>
       <find>true</find>
-      <find>console</find>
       <find>init</find>
       <find>addEventListener</find>
+      <find>ele</find>
+      <find>proc</find>
+      <find>console</find>
+      <find>handleArrayFromBackEnd</find>
+      <find>searchOfWinner</find>
+      <find>stopGame</find>
+      <find>removeChild</find>
+      <find>document.createElement(&quot;div&quot;)</find>
+      <find>class</find>
+      <find>wrapper1</find>
+      <find>handleOfCellClick</find>
     </findStrings>
     <replaceStrings>
       <replace>black</replace>
@@ -215,20 +234,20 @@
       <option name="presentableId" value="Default" />
       <updated>1508773785247</updated>
       <workItem from="1508773786617" duration="48227000" />
-      <workItem from="1509018586009" duration="25246000" />
+      <workItem from="1509018586009" duration="47765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73473000" />
+    <option name="totallyTimeSpent" value="95992000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -270,7 +289,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cross_game.js</url>
+          <line>575</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cross_game.js</url>
+          <line>582</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -280,7 +313,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#519#1178#0" expanded="false" />
+            <element signature="e#1952#2244#0" expanded="false" />
+            <element signature="e#2415#32769#0" expanded="false" />
+            <element signature="e#32814#33323#0" expanded="false" />
+            <element signature="e#33424#46005#0" expanded="false" />
+            <element signature="e#46074#46881#0" expanded="false" />
+            <element signature="e#46990#60737#0" expanded="false" />
+            <element signature="e#60804#68665#0" expanded="false" />
+            <element signature="e#68754#69144#0" expanded="false" />
+            <marker date="1509125983075" expanded="true" signature="2425:2638" ph="..." />
           </folding>
         </state>
       </provider>
@@ -294,18 +336,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cross_game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="190" column="15" lean-forward="false" selection-start-line="190" selection-start-column="15" selection-end-line="190" selection-end-column="15" />
+        <state relative-caret-position="-697">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#519#1178#0" expanded="false" />
+            <element signature="e#1952#2244#0" expanded="false" />
+            <element signature="e#2415#32769#0" expanded="false" />
+            <element signature="e#32814#33323#0" expanded="false" />
+            <element signature="e#33424#46005#0" expanded="false" />
+            <element signature="e#46074#46881#0" expanded="false" />
+            <element signature="e#46990#60737#0" expanded="false" />
+            <element signature="e#60804#68665#0" expanded="false" />
+            <element signature="e#68754#69144#0" expanded="false" />
+            <marker date="1509125983075" expanded="true" signature="2425:2638" ph="..." />
           </folding>
         </state>
       </provider>
