@@ -15,32 +15,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cross_game.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cross_game.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cross_game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-697">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding>
-                <element signature="e#519#1178#0" expanded="false" />
-                <element signature="e#1952#2244#0" expanded="false" />
-                <element signature="e#2415#32769#0" expanded="false" />
-                <element signature="e#32814#33323#0" expanded="false" />
-                <element signature="e#33424#46005#0" expanded="false" />
-                <element signature="e#46074#46881#0" expanded="false" />
-                <element signature="e#46990#60737#0" expanded="false" />
-                <element signature="e#60804#68665#0" expanded="false" />
-                <element signature="e#68754#69144#0" expanded="false" />
-                <marker date="1509125983075" expanded="true" signature="2425:2638" ph="..." />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,8 +76,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/cross_game.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -234,12 +223,12 @@
       <option name="presentableId" value="Default" />
       <updated>1508773785247</updated>
       <workItem from="1508773786617" duration="48227000" />
-      <workItem from="1509018586009" duration="47765000" />
+      <workItem from="1509018586009" duration="49172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95992000" />
+    <option name="totallyTimeSpent" value="97399000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -292,13 +281,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/cross_game.js</url>
-          <line>575</line>
+          <line>330</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/cross_game.js</url>
-          <line>582</line>
+          <line>379</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -312,18 +301,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#519#1178#0" expanded="false" />
-            <element signature="e#1952#2244#0" expanded="false" />
-            <element signature="e#2415#32769#0" expanded="false" />
-            <element signature="e#32814#33323#0" expanded="false" />
-            <element signature="e#33424#46005#0" expanded="false" />
-            <element signature="e#46074#46881#0" expanded="false" />
-            <element signature="e#46990#60737#0" expanded="false" />
-            <element signature="e#60804#68665#0" expanded="false" />
-            <element signature="e#68754#69144#0" expanded="false" />
-            <marker date="1509125983075" expanded="true" signature="2425:2638" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -334,30 +312,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/cross_game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cross_game.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#519#1178#0" expanded="false" />
-            <element signature="e#1952#2244#0" expanded="false" />
-            <element signature="e#2415#32769#0" expanded="false" />
-            <element signature="e#32814#33323#0" expanded="false" />
-            <element signature="e#33424#46005#0" expanded="false" />
-            <element signature="e#46074#46881#0" expanded="false" />
-            <element signature="e#46990#60737#0" expanded="false" />
-            <element signature="e#60804#68665#0" expanded="false" />
-            <element signature="e#68754#69144#0" expanded="false" />
-            <marker date="1509125983075" expanded="true" signature="2425:2638" ph="..." />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
